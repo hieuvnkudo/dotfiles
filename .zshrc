@@ -10,3 +10,8 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/Repos/dotfiles --work-tree=$HOME'
 eval "$(fnm env --use-on-cd --shell zsh)"
 eval "$(starship init zsh)"
 
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/hieult/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
